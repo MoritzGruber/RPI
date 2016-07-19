@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Robot Control</title>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="../node_modules/angular/angular.min.js "></script>
+    <script src="js/app.js "></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+<div class="controlPanel">
+    <button ng-click="doClick('foreward')" >foreward</button>
+    <button ng-click="doClick('left')" >left</button>
+    <button ng-click="doClick('stop')" >stop</button>
+    <button ng-click="doClick('right')" >right</button>
+    <button ng-click="doClick('backward')" >backward</button>
+
+    <div class="coordinateSystem" ng-click="doClick($event)" id="coordinateSystem" make-responsive></div>
+</body>
+
+</html>
