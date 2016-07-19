@@ -10,14 +10,17 @@
 </head>
 
 <body ng-app="myApp" ng-controller="myCtrl">
-<div class="controlPanel">
-    <button ng-click="doClick('foreward')" >foreward</button>
-    <button ng-click="doClick('left')" >left</button>
-    <button ng-click="doClick('stop')" >stop</button>
-    <button ng-click="doClick('right')" >right</button>
-    <button ng-click="doClick('backward')" >backward</button>
-
-    <div class="coordinateSystem" ng-click="doClick($event)" id="coordinateSystem" make-responsive></div>
+<div id="top" class="thirdheight fullwidth">
+    <button class="fullwidth fullheight" id="foreward" ng-click="doClick('foreward')">foreward</button>
+</div>
+<div id="mid" class="thirdheight fullwidth">
+    <button class="fullheight thirdwidth" id="left" ng-click="doClick('left')">left</button>
+    <button class="fullheight thirdwidth" id="stop" ng-click="doClick('stop')">stop</button>
+    <button class="fullheight thirdwidth" id="right" ng-click="doClick('right')">right</button>
+</div>
+<div id="bot" class="thirdheight fullwidth">
+    <button class="fullwidth fullheight" id="backward" ng-click="doClick('backward')">backward</button>
+</div>
 </body>
 
 </html>
