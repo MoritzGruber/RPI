@@ -11,15 +11,14 @@
 
 <body ng-app="myApp" ng-controller="myCtrl">
 <div id="top" class="thirdheight fullwidth">
-    <button class="fullwidth fullheight" id="foreward" ng-click="doClick('foreward')">foreward</button>
+    <input class="fullwidth fullheight" id="foreward" type="number"  ng-model="pinNumber" style="font-size: xx-large">
 </div>
 <div id="mid" class="thirdheight fullwidth">
-    <button class="fullheight thirdwidth" id="left" ng-click="doClick('left')">left</button>
-    <button class="fullheight thirdwidth" id="stop" ng-click="doClick('stop')">stop</button>
-    <button class="fullheight thirdwidth" id="right" ng-click="doClick('right')">right</button>
+    <input class="fullheight thirdwidth" type="checkbox" id="left" ng-model="isHigh">
+    <input class="fullheight thirdwidth" type="checkbox" id="stop" ng-model="isInputMode" >
 </div>
 <div id="bot" class="thirdheight fullwidth">
-    <button class="fullwidth fullheight" id="backward" ng-click="doClick('backward')">backward</button>
+    <button class="fullwidth fullheight" id="backward" ng-click="set(pinNumber, isHigh, isInputMode)" style="font-size: xx-large" >Set</button>
 </div>
 </body>
 
